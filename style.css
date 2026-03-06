@@ -883,6 +883,10 @@ h4,
         height: 250px;
     }
 
+    .scroll-indicator {
+        display: none !important;
+    }
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
