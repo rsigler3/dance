@@ -410,6 +410,10 @@ h4,
     margin: 1.5rem 0;
 }
 
+.mobile-menu .dropdown {
+    display: block;
+}
+
 .mobile-menu .dropdown-content {
     position: relative;
     background-color: transparent;
