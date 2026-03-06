@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Chautauqua Regional Youth Ballet</title>
-    <meta name="description" content="View the photo gallery for Chautauqua Regional Youth Ballet.">
+    <title>Classes | Chautauqua Regional Youth Ballet</title>
+    <meta name="description" content="View the ballet classes available.">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)">School</a>
+                    <a href="javascript:void(0)" class="dropbtn">School</a>
                     <ul class="dropdown-content">
                         <li><a href="dancers-parents.html">Info for Dancers & Parents</a></li>
                         <li><a href="classes.html">Classes</a></li>
@@ -75,33 +75,44 @@
         </ul>
     </div>
 
-    <!-- Gallery Content -->
-    <section class="photo-gallery">
+    <!-- Content -->
+    <section class="page-content">
         <div class="container">
-            <div class="photo-gallery-header">
-                <h1 class="section-title">Image Gallery</h1>
-                <p class="section-subtitle">Excellence in Motion captured on camera.</p>
+            <div class="page-content-header">
+                <h1 class="section-title">Classes & Programming</h1>
+                <p class="section-subtitle">Chautauqua Regional Youth Ballet Offerings</p>
             </div>
-            <div class="photo-grid">
-                <img src="./images/ROB01682.jpg" alt="Gallery Image">
-                <img src="./images/ROB02538.jpg" alt="Gallery Image">
-                <img src="./images/ROB02844.jpg" alt="Gallery Image">
-                <img src="./images/ROB05046.jpg" alt="Gallery Image">
-                <img src="./images/ROB05518.jpg" alt="Gallery Image">
-                <img src="./images/ROB07448.jpg" alt="Gallery Image">
-                <img src="./images/ROB08162.jpg" alt="Gallery Image">
-                <img src="./images/gallery-blue.jpg" alt="Gallery Image">
-                <img src="./images/gallery-flight.jpg" alt="Gallery Image">
-                <img src="./images/gallery-pink1.jpg" alt="Gallery Image">
-                <img src="./images/gallery-pink2.jpg" alt="Gallery Image">
-                <img src="./images/gallery-purpleleap.jpg" alt="Gallery Image">
-                <img src="./images/gallery-rainbow.jpg" alt="Gallery Image">
-                <img src="./images/gallery-trio.jpg" alt="Gallery Image">
+
+            <div class="text-content">
+                <h2>Pre-Ballet</h2>
+                <p>In this division the primary focus is on the development of the child’s coordination, motor skills,
+                    listening skills and musical awareness. In the first few years of Pre-Ballet the emphasis is placed
+                    on natural movement, flexibility and creative expression. As the child progresses through this
+                    division there is a gradual shift to a more structured movement program. The child begins to
+                    comprehend studio etiquette, spatial awareness, and the correct ballet stance through
+                    age-appropriate exercises.</p>
+                <p>In the Pre-Division students are placed according to age so that the development and coordination of
+                    the students are similar. Pre-Division classes are 45 minutes to an hour long – just enough time to
+                    hold their interest and maintain their focus.</p>
+
+                <ul style="list-style: none; padding-left: 0;">
+                    <li><strong>Creative Dance</strong> (4 years old) - Saturdays 11:00am – 12:00pm ($62.50/month)</li>
+                    <li><strong>Pre-Ballet A</strong> (5 years old) - Saturdays 11:00am – 12:00pm ($62.50/month)</li>
+                    <li><strong>Pre-Ballet B</strong> (6 years old) - Tuesdays 4:00pm – 5:00pm ($70/month)</li>
+                </ul>
+
+                <a href="https://cryb.net/wp-content/uploads/2021/11/PreBallet-info2021-1122021.pdf" target="_blank"
+                    class="btn-secondary"
+                    style="margin-top: 1rem; margin-bottom: 2rem; display: inline-block;">Pre-Ballet Information
+                    Guide</a>
+                <br>
+                <a href="enroll.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll
+                    Now</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Sponsors -->
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container footer-grid">
             <div class="footer-brand">
@@ -147,14 +158,6 @@
             <p>&copy; <span id="year"></span> Chautauqua Regional Youth Ballet. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <span class="lightbox-nav lightbox-prev">&#10094;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <span class="lightbox-nav lightbox-next">&#10095;</span>
-    </div>
 
     <!-- Main Logic -->
     <script type="module" src="./main.js"></script>

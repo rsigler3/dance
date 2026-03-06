@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Chautauqua Regional Youth Ballet</title>
-    <meta name="description" content="View the photo gallery for Chautauqua Regional Youth Ballet.">
+    <title>Info for Dancers & Parents | Chautauqua Regional Youth Ballet</title>
+    <meta name="description" content="Dress Code and Tuition Information for CRYB.">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)">School</a>
+                    <a href="javascript:void(0)" class="dropbtn">School</a>
                     <ul class="dropdown-content">
                         <li><a href="dancers-parents.html">Info for Dancers & Parents</a></li>
                         <li><a href="classes.html">Classes</a></li>
@@ -75,33 +75,40 @@
         </ul>
     </div>
 
-    <!-- Gallery Content -->
-    <section class="photo-gallery">
+    <!-- Content -->
+    <section class="page-content">
         <div class="container">
-            <div class="photo-gallery-header">
-                <h1 class="section-title">Image Gallery</h1>
-                <p class="section-subtitle">Excellence in Motion captured on camera.</p>
+            <div class="page-content-header">
+                <h1 class="section-title">Info for Dancers & Parents</h1>
+                <p class="section-subtitle">Important Policies and Information</p>
             </div>
-            <div class="photo-grid">
-                <img src="./images/ROB01682.jpg" alt="Gallery Image">
-                <img src="./images/ROB02538.jpg" alt="Gallery Image">
-                <img src="./images/ROB02844.jpg" alt="Gallery Image">
-                <img src="./images/ROB05046.jpg" alt="Gallery Image">
-                <img src="./images/ROB05518.jpg" alt="Gallery Image">
-                <img src="./images/ROB07448.jpg" alt="Gallery Image">
-                <img src="./images/ROB08162.jpg" alt="Gallery Image">
-                <img src="./images/gallery-blue.jpg" alt="Gallery Image">
-                <img src="./images/gallery-flight.jpg" alt="Gallery Image">
-                <img src="./images/gallery-pink1.jpg" alt="Gallery Image">
-                <img src="./images/gallery-pink2.jpg" alt="Gallery Image">
-                <img src="./images/gallery-purpleleap.jpg" alt="Gallery Image">
-                <img src="./images/gallery-rainbow.jpg" alt="Gallery Image">
-                <img src="./images/gallery-trio.jpg" alt="Gallery Image">
+
+            <div class="text-content">
+                <h2>Dress Code</h2>
+                <p>Students are expected to maintain a professional appearance and to adhere to the uniform
+                    requirements. Coming to class dressed on your appropriate attire is an important part of preparing
+                    yourself for class. Proper attire is an important part of showing respect for your classmates, your
+                    teacher, and the discipline of dance.</p>
+                <p>Leotards and tights are available for purchase in the studio lobby.</p>
+                <p>Refer to the dress code chart for specific requirements by level.</p>
+
+                <a href="https://cryb.net/wp-content/uploads/2020/08/2020-2021-Handbook-14.pdf" target="_blank"
+                    class="btn-secondary" style="margin-top: 1rem; margin-bottom: 2rem; display: inline-block;">View
+                    Dress Code Policies</a>
+
+                <hr style="border-color: rgba(255,255,255,0.1); margin: 3rem 0;">
+
+                <h2>Tuition</h2>
+                <p>For detailed information regarding tuition costs, payment plans, and class fees, please visit our
+                    Enrollment Portal. You may also contact the studio directly for any questions regarding tuition.</p>
+
+                <a href="enroll.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View
+                    Enrollment Portal</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Sponsors -->
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container footer-grid">
             <div class="footer-brand">
@@ -147,14 +154,6 @@
             <p>&copy; <span id="year"></span> Chautauqua Regional Youth Ballet. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <span class="lightbox-nav lightbox-prev">&#10094;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <span class="lightbox-nav lightbox-next">&#10095;</span>
-    </div>
 
     <!-- Main Logic -->
     <script type="module" src="./main.js"></script>
