@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chautauqua Regional Youth Ballet | Excellence in Motion</title>
+    <meta name="description"
+        content="Chautauqua Regional Youth Ballet – The Area's Premiere School of Classical Ballet Instruction.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div id="stage-curtain-screen" class="stage-container">
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+        <div class="spotlight spot-1"></div>
+        <div class="spotlight spot-2"></div>
+        <div class="curtain-logo-container">
+            <img src="/images/cryb-logo-white.png" alt="CRYB Logo" class="loading-logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <img src="/images/cryb-logo-white.png" alt="CRYB Logo">
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#school">School</a></li>
+                <li><a href="index.html#programming">Programming</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="contact.html" class="btn-primary">Enroll Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#school">School</a></li>
+            <li><a href="index.html#programming">Programming</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="contact.html">Enroll Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="/images/gallery-purpleleap.jpg" alt="Ballet dancer leaping" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h2 class="hero-subtitle">Chautauqua Regional Youth Ballet</h2>
+            <h1 class="hero-title">
+                <span class="line"><span class="word">Excellence</span></span>
+                <span class="line"><span class="word italic">in Motion.</span></span>
+            </h1>
+            <p class="hero-desc">The Area's Premiere School of Classical Ballet Instruction</p>
+            <div class="hero-buttons">
+                <a href="#school" class="btn-secondary">Discover Our Programs</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-tag">Our Legacy</span>
+                <h2 class="section-title">Cultivating Artistry</h2>
+                <p>Welcome to the Chautauqua Regional Youth Ballet. As the region's elite hub for classical ballet, we
+                    dedicate ourselves to the pursuit of technical precision and profound artistry.</p>
+                <p>Our curriculum is thoughtfully designed to foster discipline, grace, and an enduring passion for
+                    dance in every student, from our Pre-Ballet classes to our Advanced conservatory levels.</p>
+                <a href="#school" class="link-arrow">Explore The School <svg width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="image-reveal">
+                    <img src="/images/ROB01682.jpg" alt="Ballet students">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming / School Section -->
+    <section class="school" id="school">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">The Academy</span>
+                <h2 class="section-title">Curriculum & Programming</h2>
+                <p class="section-subtitle">Comprehensive training for every stage of your dance journey.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="card-img">
+                        <img src="/images/ROB05046.jpg" alt="Pre-Ballet">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pre-Ballet</h3>
+                        <p>An introduction to movement, spatial awareness, and the foundational joy of dance for young
+                            aspiring artists.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-img">
+                        <img src="/images/gallery-trio.jpg" alt="Classical Instruction">
+                    </div>
+                    <div class="card-content">
+                        <h3>Classical Instruction</h3>
+                        <p>Rigorous, tiered syllabus rooted in the timeless techniques of classical ballet for dedicated
+                            students.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-img">
+                        <img src="/images/gallery-blue.jpg" alt="Summer Intensive">
+                    </div>
+                    <div class="card-content">
+                        <h3>Summer Intensives</h3>
+                        <p>Immersive summer programming designed to rapidly elevate technique and performance quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Quote / Action -->
+    <section class="quote-section">
+        <div class="quote-bg" style="background-image: url('/images/ROB08162.jpg');">
+            <div class="quote-overlay"></div>
+        </div>
+        <div class="container quote-content text-center">
+            <h2 class="large-quote">"Dance is the hidden language of the soul."</h2>
+            <div class="quote-divider"></div>
+            <p>Join us in continuing a tradition of excellence.</p>
+            <a href="#contact" class="btn-primary mt-8">Begin Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visuals</span>
+                <h2 class="section-title">Moments of Grace</h2>
+            </div>
+            <div class="gallery-marquee">
+                <div class="marquee-track">
+                    <img src="/images/gallery-pink1.jpg" alt="Ballet in pink">
+                    <img src="/images/ROB02844.jpg" alt="Ballet performance">
+                    <img src="/images/gallery-purpleleap.jpg" alt="Purple leap">
+                    <img src="/images/ROB02538.jpg" alt="Student dancing">
+                    <img src="/images/ROB07448.jpg" alt="Performance shot">
+                    <img src="/images/gallery-pink2.jpg" alt="Ballet in pink 2">
+                </div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="marquee-track" aria-hidden="true">
+                    <img src="/images/gallery-pink1.jpg" alt="Ballet in pink">
+                    <img src="/images/ROB02844.jpg" alt="Ballet performance">
+                    <img src="/images/gallery-purpleleap.jpg" alt="Purple leap">
+                    <img src="/images/ROB02538.jpg" alt="Student dancing">
+                    <img src="/images/ROB07448.jpg" alt="Performance shot">
+                    <img src="/images/gallery-pink2.jpg" alt="Ballet in pink 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Sponsors -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="/images/cryb-logo-white.png" alt="CRYB Logo" class="footer-logo">
+                <p>Excellence in Motion.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/crybballet/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/CRYBallet" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>School</h4>
+                <ul>
+                    <li><a href="#">Faculty & Staff</a></li>
+                    <li><a href="#">Tuition</a></li>
+                    <li><a href="#">Dress Code</a></li>
+                    <li><a href="#">Adult Classes</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Performances & Events</a></li>
+                    <li><a href="#">Support the Ballet</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Email: info@cryb.net</p>
+                <form class="footer-form" action="#" method="POST">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="2" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                <p class="sponsor-text mt-8">CRYB Programming made possible by the New York State Council for the Arts
+                    with the support of the Office of the Governor and the New York State Legislature.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Chautauqua Regional Youth Ballet. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main Logic -->
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
