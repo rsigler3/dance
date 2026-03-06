@@ -271,5 +271,30 @@ document.addEventListener("DOMContentLoaded", () => {
                 closeLightbox();
             }
         });
+
+        // Mobile Swipe Support
+        let touchstartX = 0;
+        let touchendX = 0;
+
+        lightbox.addEventListener('touchstart', e => {
+            touchstartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        lightbox.addEventListener('touchend', e => {
+            touchendX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        const handleSwipe = () => {
+            const threshold = 50;
+            if (touchendX < touchstartX - threshold) {
+                // Swiped left
+                nextImage();
+            }
+            if (touchendX > touchstartX + threshold) {
+                // Swiped right
+                prevImage();
+            }
+        };
     }
 });
