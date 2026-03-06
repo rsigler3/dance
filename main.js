@@ -172,6 +172,20 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power3.out"
     });
 
+    // Hero Parallax
+    if (document.querySelector('.hero-img')) {
+        gsap.to(".hero-img", {
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "top top",
+                end: "bottom top",
+                scrub: true,
+            },
+            yPercent: 40,
+            ease: "none"
+        });
+    }
+
     // Page Transition Interceptor
     document.body.addEventListener('click', (e) => {
         const link = e.target.closest('a');

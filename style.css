@@ -734,7 +734,6 @@ h4,
 
 .gallery-marquee {
     display: flex;
-    gap: 2rem;
     width: max-content;
     margin-top: 4rem;
 }
@@ -742,7 +741,11 @@ h4,
 .marquee-track {
     display: flex;
     gap: 2rem;
+    padding-right: 2rem;
     animation: marquee 60s linear infinite;
+    will-change: transform;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .marquee-track img {
@@ -750,20 +753,22 @@ h4,
     width: auto;
     border-radius: 10px;
     object-fit: cover;
+    transform: translateZ(0);
+    backface-visibility: hidden;
     transition: transform 0.5s ease;
 }
 
 .marquee-track img:hover {
-    transform: scale(1.02);
+    transform: translateZ(0) scale(1.02);
 }
 
 @keyframes marquee {
     0% {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translate3d(-100%, 0, 0);
     }
 }
 
