@@ -74,14 +74,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 .to(".scroll-indicator", { opacity: 1, duration: 0.8, ease: "power2.out" }, "open+=0.8");
         }
     } else {
+        const isMobile = window.innerWidth <= 768;
+        const spotSpeed = isMobile ? 1.0 : 1.5;
+
         // Full Intro with Spotlight animation first
         tl.to(".spotlight", { opacity: 1, duration: 0.5 })
-            .fromTo(".spot-1", { x: "-20vw", y: "120vh" }, { x: "40vw", y: "30vh", duration: 1.5, ease: "power1.inOut" }, "spots")
-            .fromTo(".spot-2", { x: "120vw", y: "120vh" }, { x: "60vw", y: "70vh", duration: 1.5, ease: "power1.inOut" }, "spots")
-            .to(".spot-1", { x: "20vw", y: "60vh", duration: 1.5, ease: "power1.inOut" }, "spots2")
-            .to(".spot-2", { x: "80vw", y: "40vh", duration: 1.5, ease: "power1.inOut" }, "spots2")
-            .to(".spot-1", { x: "50vw", y: "50vh", duration: 1.5, ease: "power2.inOut" }, "spots3")
-            .to(".spot-2", { x: "50vw", y: "50vh", duration: 1.5, ease: "power2.inOut" }, "spots3")
+            .fromTo(".spot-1", { x: "-20vw", y: "120vh" }, { x: "40vw", y: "30vh", duration: spotSpeed, ease: "power1.inOut" }, "spots")
+            .fromTo(".spot-2", { x: "120vw", y: "120vh" }, { x: "60vw", y: "70vh", duration: spotSpeed, ease: "power1.inOut" }, "spots")
+            .to(".spot-1", { x: "20vw", y: "60vh", duration: spotSpeed, ease: "power1.inOut" }, "spots2")
+            .to(".spot-2", { x: "80vw", y: "40vh", duration: spotSpeed, ease: "power1.inOut" }, "spots2")
+            .to(".spot-1", { x: "50vw", y: "50vh", duration: spotSpeed, ease: "power2.inOut" }, "spots3")
+            .to(".spot-2", { x: "50vw", y: "50vh", duration: spotSpeed, ease: "power2.inOut" }, "spots3")
             // Fade in logo slowly and increase its size as spotlights center
             .fromTo(".loading-logo", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1.15, duration: 2.5, ease: "power2.out" }, "spots3")
             // Fade out spotlights and logo

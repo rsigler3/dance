@@ -197,6 +197,16 @@ h4,
     /* Starts hidden */
 }
 
+@media screen and (max-width: 768px) {
+    .spotlight {
+        width: 500px;
+        height: 500px;
+        top: -250px;
+        left: -250px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 65%);
+    }
+}
+
 .curtain-left {
     transform-origin: left;
     border-right: 2px solid rgba(0, 0, 0, 0.8);
@@ -636,11 +646,13 @@ h4,
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     overflow: hidden;
-    transition: transform var(--transition-slow);
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition-slow);
 }
 
 .program-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .card-img {
