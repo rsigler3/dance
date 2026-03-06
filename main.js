@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Hero animation early if on homepage
         if (document.querySelector('.hero-img')) {
-            tl.from(".hero-img", { scale: 1.1, duration: 1.5, ease: "power3.out" }, "open+=0.2")
+            tl.fromTo(".hero-img", { scale: 1.1, z: 0.01 }, { scale: 1.05, z: 0.01, duration: 1.5, ease: "power3.out", force3D: true, clearProps: "all" }, "open+=0.2")
                 .to(".hero-subtitle", { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, "open+=0.4")
                 .to(".hero-title .word", { y: "0%", duration: 1, stagger: 0.2, ease: "power4.out" }, "open+=0.5")
                 .to(".hero-desc", { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, "open+=0.6")
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Hero animation full phase
         if (document.querySelector('.hero-img')) {
-            tl.from(".hero-img", { scale: 1.2, duration: 2, ease: "power3.out" }, "open+=0.5")
+            tl.fromTo(".hero-img", { scale: 1.2, z: 0.01 }, { scale: 1.05, z: 0.01, duration: 2, ease: "power3.out", force3D: true, clearProps: "all" }, "open+=0.5")
                 .to(".hero-subtitle", { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=1.5")
                 .to(".hero-title .word", { y: "0%", duration: 1.2, stagger: 0.3, ease: "power4.out" }, "-=1")
                 .to(".hero-desc", { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.8")
@@ -173,8 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Hero Parallax
-    if (document.querySelector('.hero-img')) {
-        gsap.to(".hero-img", {
+    if (document.querySelector('.hero-bg')) {
+        gsap.to(".hero-bg", {
             scrollTrigger: {
                 trigger: ".hero",
                 start: "top top",
