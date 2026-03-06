@@ -360,7 +360,7 @@ h4,
 .hero-subtitle {
     font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     margin-bottom: 1rem;
     color: var(--color-secondary);
     opacity: 0;
@@ -893,5 +893,142 @@ h4,
 
     .hamburger.active .bar:nth-child(2) {
         transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+/* Full Page Gallery Layout */
+.photo-gallery {
+    padding: 12rem 0 6rem;
+    min-height: 80vh;
+    background-color: var(--color-bg);
+}
+
+.photo-gallery-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.photo-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+}
+
+.photo-grid img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.photo-grid img:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 1024px) {
+    .photo-grid {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .photo-grid {
+        column-count: 1;
+    }
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    padding-top: 5vh;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.lightbox.active .lightbox-content {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 100000;
+    transition: color 0.2s ease;
+}
+
+.lightbox-close:hover {
+    color: var(--color-secondary);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 100000;
+    user-select: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 1rem;
+}
+
+.lightbox-nav:hover {
+    color: var(--color-secondary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .lightbox-nav {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .lightbox-prev {
+        left: 5px;
+    }
+
+    .lightbox-next {
+        right: 5px;
     }
 }
